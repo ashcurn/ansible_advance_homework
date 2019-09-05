@@ -5,6 +5,7 @@
     uri:
       url: "http://{{ inventory_hostname }}"
       return_content: true
+    delegate_to: localhost
     register: webpage
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:

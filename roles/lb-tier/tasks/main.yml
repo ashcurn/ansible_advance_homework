@@ -9,6 +9,7 @@
   service:
     name: haproxy
     state: started
+    enabled: true
 
 - name: Configure HAProxy
   template:

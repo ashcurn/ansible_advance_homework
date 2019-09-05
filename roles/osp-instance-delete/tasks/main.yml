@@ -10,7 +10,7 @@
 
   - name: Delete instances
     os_server:
-      cloud: osp_cloud
+      cloud: ospcloud
       name: "{{ item.name }}"
       state: absent
       image: rhel-guest

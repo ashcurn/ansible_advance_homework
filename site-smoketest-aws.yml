@@ -1,4 +1,4 @@
-- hosts: tag_AnsibleGroup_frontends
+- hosts: localhost
   gather_facts: false
   tasks:
   - name: ec2 facts

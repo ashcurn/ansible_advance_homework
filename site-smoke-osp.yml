@@ -20,6 +20,8 @@
 
   - name: Fail if 'Ansible has done its job' is not in the page content
     fail:
-    when: "'Ansible has done its job' not in webpage.content"
+    when: "'Ansible has done its job' not in item.content"
+    with_items:
+      - "{{ webpage.results }}"
     tags:
       - osp.smoke
